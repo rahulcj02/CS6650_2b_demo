@@ -1,4 +1,23 @@
-**.tfvars
-**.tfstate
-**.tfstate.*
+# Terraform state and local caches
+*.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
 **/.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Secrets and local env
+.env
+.env.*
+*.pem
+*.key
+
+# Build artifacts
+src/server
+
+# Local tooling/test artifacts
+.venv/
+loadtest/results/
+__pycache__/
+*.pyc
